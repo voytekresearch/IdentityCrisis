@@ -109,7 +109,19 @@ def scrape_pairs(terms, base_phrase=None, fieldkey='ALL'):
             url = url + "&rettype=count"
 
             # Pull the page, and parse with Beautiful Soup
-            page = req.get_url(url)
+            #
+            # sometimes this piece times out, probably because PM is disconnecting
+            # if connection fails, retry (up to 10 times)
+            tries = 10
+            while tries > 0:
+                try:
+                    page = req.get_url(url)
+                    tries = 0
+                except:
+                    print 'Connection timed out, retrying...'
+                    tries -= 1
+                    continue
+
             page_soup = BeautifulSoup(page.content, 'lxml')
 
             # Check whether the search term returned something
