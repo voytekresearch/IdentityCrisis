@@ -117,6 +117,7 @@ def scrape_pairs(terms, base_phrase=None, fieldkey='ALL'):
                 try:
                     page = req.get_url(url)
                     tries = 0
+                # DO NOT USE BARE EXCEPT
                 except:
                     print 'Connection timed out, retrying...'
                     tries -= 1
@@ -139,7 +140,12 @@ def scrape_pairs(terms, base_phrase=None, fieldkey='ALL'):
                 print '--------------'
 
             # Add the total number of papers for term
-            pair_wise[ind1, ind2] = count
+            # Because we skipped the first ind1 terms, pad the index to ind2 to make
+            # an upper triangle matrix
+            pair_wise[ind1, ind2 + ind1] = count
 
     req.close()
+
+    # flip upper triangle to complete the matrix symmetrically
+    pair_wise = np.triu(pair_wise, 1) + np.transpose(pair_wise)
     return pair_wise
