@@ -118,9 +118,9 @@ def scrape_pairs(terms, base_phrase=None, fieldkey='ALL'):
                     page = req.get_url(url)
                     tries = 0
                 # DO NOT USE BARE EXCEPT
-                except:
-                    print 'Connection timed out, retrying...'
-                    tries -= 1
+                except ConnectionError:
+                    tries -= 1                    
+                    print 'Connection timed out, retrying...', tries
                     continue
 
             page_soup = BeautifulSoup(page.content, 'lxml')
