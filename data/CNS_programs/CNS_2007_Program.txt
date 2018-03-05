@@ -1464,7 +1464,7 @@ Wolfson1, Walter Ritter2, Jeffrey Halperin3; 1City College of New York, 2Nathan
 S. Kline Institute for Psychiatric Research, 3Queen College — Recent models of
 attention in typically developing and attentionally challenged children
 have focused on speed and efficiency of attention allocation and the ability
-to inhibit processing of irrelevant stimuli. Our study examines the eventrelated potentials (ERP) elicited from children with attention deficit/
+to inhibit processing of irrelevant stimuli. Our study examines the event related potentials (ERP) elicited from children with attention deficit/
 hyperactivity disorder (AD/HD) and typically developing children during an auditory selective attention task. These tasks generally require the
 participant to attend to one of two stimulus streams which are presented
 concurrently and to respond to target stimuli in the attended stream. An
