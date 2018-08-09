@@ -1,0 +1,293 @@
+
+Invited Symposium Session 1
+FRONTAL CORTEX CONTRIBUTIONS TO DECISION
+MAKING
+Sunday, March 26, 10:00 am - Noon, Ballroom A
+Chair: Elisabeth A (Betsy) Murray, National Institute of Mental
+Health
+Speakers: Betsy Murray, Erin Rich, Paul Cisek, Joseph Kable
+There is broad interest in the neural mechanisms underlying rewardbased decision making. The four speakers will provide an update on
+different aspects of decision making in macaques and humans. Murray
+and Rich will unravel the neural substrates and neural mechanisms
+underlying object choices in macaque monkeys. Murray will discuss
+the causal contributions of different frontal cortex areas to object
+choices, focusing on the complementary roles for orbital and ventral
+prefrontal regions. Rich will discuss a novel approach to decode value
+representations from orbitofrontal cortex during individual choices with
+high temporal resolution. Cisek will present the novel hypothesis that
+decisions about actions unfold as a biased competition, and then will
+test that idea using neurophysiological approaches in macaques.
+Based on findings from both functional imaging and effects of brain
+damage, Kable will discuss the separable contributions of
+ventromedial prefrontal cortex and anterior cingulate cortex to decision
+making in humans.
+TALK 1: FROM KNOWLEDGE TO ACTION: THE ROLE OF THE
+PRIMATE ORBITOFRONTAL CORTEX
+Betsy Murray1; 1National Institute of Mental Health
+The orbitofrontal cortex (OFC), traditionally defined as Walker’s areas
+11, 13 and 14, has long been thought to play a critical role in behavioral
+flexibility, including behavioral inhibition and the regulation of emotion.
+Recent evidence has overturned these ideas by showing that
+inadvertent damage to fiber pathways account for the reported deficits.
+The use of a more selective lesion method in macaque monkeys has
+shown that OFC has a more specific and different function:
+representing and updating the value of specific expected outcomes,
+based on current biological states. These updated valuations, in turn,
+guide choice behavior. Recent studies have identified functional
+subdivisions within OFC and helped to differentiate it from nearby
+20
+
+Cognitive Neuroscience Society
+
+areas. In one study we found that the posterior part of OFC, area 13,
+is necessary for its value updating function, while the anterior part,
+area 11, translates this knowledge into adaptive actions. In a second
+study we contrasted the contributions of OFC and the neighboring
+ventrolateral prefrontal cortex (VLPFC; Walker’s area 12) to value
+updating. We found that OFC and VLPFC play complementary roles
+in value updating and—by extension—decision making. The former
+depends on dynamic internal states; the latter depends on dynamic
+external contingencies. Given that granular OFC and VLPFC emerged
+during the evolution of primates, a comparative analysis suggests that
+these capacities built on OFC functions inherited from early mammals.
+TALK 2: DYNAMIC ENCODING OF CHOICE IN THE
+ORBITOFRONTAL CORTEX
+Erin Rich1,2; 1University of California Berkeley, 2University of
+California San Francisco
+When making a subjective decision, it is believed that the brain
+computes a value for each option and compares these values to arrive
+at a choice. Evidence suggests that the orbitofrontal cortex (OFC) is
+critically involved in this process, however the neural mechanisms
+involved remain largely obscure. One reason is that preferences are
+frequently driven by knowledge and states internal to the organism,
+and far removed from externally observable sensory inputs or motor
+outputs. Furthermore, subjective decisions are not stereotyped. They
+may evolve differently even if the same decision is made multiple
+times, so that averaging neural responses over repeated trials can
+obscure critical detail. With this in mind, we used a novel approach to
+decode value representations from OFC during individual choices with
+high temporal resolution. Ensembles of OFC neurons and field
+potentials were recorded while non-human primate subjects chose
+between images that predicted rewards of different value. We used a
+classification algorithm to decode patterns of activity associated with
+each image, and found that OFC alternated between states
+representing the value of two choice options. The decoded patterns
+varied trial-by-trial, but the strength and frequency of the recovered
+states predicted whether a subject would decide quickly or vacillate
+between the two alternatives. Multiple neural features contributed to
+these representations, and individual neurons were found to shift their
+firing rates as the network evaluated each option. Overall, dynamic
+
+2017 Annual M eeting
+
+representations of value in OFC are likely a fundamental feature of
+large-scale brain networks that underlie value-based decision-making.
+TALK 3: NEURAL MECHANISMS OF REAL-TIME EMBODIED
+DECISIONS
+Paul Cisek1; 1University of Montreal
+Psychological and neurophysiological studies of decision-making have
+focused primarily on scenarios in which subjects are faced with
+discrete options that are stable in time, permitting a serial process of
+representing the relevant information, careful deliberation about the
+choice, followed by action planning and execution. However, the brain
+evolved to guide interactions with a dynamic and constantly changing
+world, in which the choices themselves as well as their relative costs
+and benefits are defined by the momentary geometry of the immediate
+environment and are continuously changing during ongoing activity.
+Such “embodied decisions” still dominate our lives, whether we’re
+playing a sport or walking through a crowd, and they pose challenges
+that are very different than the demands of economic choice. To deal
+with these challenges, animals require a neural architecture in which
+the sensorimotor specification of potential actions, their valuation,
+selection, and even execution can all take place in parallel. I will
+describe a general hypothesis for how the brain deals with the
+challenges of such dynamic and embodied behavior, and present a
+series of neurophysiological recording experiments in rhesus monkeys
+aimed at testing the predictions of this hypothesis. These experiments
+suggest that decisions about actions unfold as a biased competition
+taking place within a map of potential actions and that the resolution
+of this competition, in the sensorimotor system, is what determines the
+volitional commitment to an action choice.
+TALK 4: VENTROMEDIAL PREFRONTAL CORTEX PLAYS A
+SIMILAR ROLE IN TEMPORALLY-EXTENDED FORAGING-STYLE
+DECISIONS AND BINARY CHOICES
+Joseph Kable1; 1University of Pennsylvania
+Many decisions involve choosing whether to continue pursuing a
+current goal or abandon this course of action in favor of an alternative
+one. Foraging is a classic example of such sequential, temporallyextended decision making. There has been much debate about
+whether the neural mechanisms of temporally-extended decisions,
+such as foraging, are fundamentally similar to those of choices from a
+fixed menu of options. To address this question, we performed a series
+of studies using a willingness-to-wait paradigm, in which people
+continually reassess whether they want to keep waiting for a
+temporally uncertain delayed reward. We find that waiting behavior in
+this task is well described by formal models of optimal foraging. Using
+fMRI, we find that neural activity in the ventromedial prefrontal cortex
+tracks the value of the awaited reward as it dynamically changes
+through time, akin to the static value signal previously observed in this
+region during discrete choices from a fixed menu. Damage to the
+
+I nvit ed Sym pos ium
+
+ventromedial prefrontal cortex in humans also impairs the calibration
+of waiting, in the same way that damage to this region impairs the
+consistency of binary choices. In contrast to the results in ventromedial
+prefrontal cortex, we find that anterior cingulate cortex and anterior
+insula exhibit increased activity right before decisions to abandon the
+current option, and interpretation of this as a signal to shift strategy is
+bolstered by the finding that lesions here enhance waiting. These
+results argue for a continuity in the role of frontal cortex across different
+forms of decision-making.
+Q&A PERIOD
+The speakers will take questions from the audience.
+
+Invited Symposium Session 2
+CORTICAL OSCILLATIONS IN HEARING, SPEECH, AND
+LANGUAGE
+Sunday, March 26, 10:00 am - Noon, Ballroom B/C
+Chair: David Poeppel, Max-Planck-Institute, NYU
+Speakers: Saskia Haegens, Virginie van Wassenhove, Nai Ding,
+David Poeppel
+Neural activity of an oscillatory nature is observed in a range of studies
+investigating perception and cognition. There is legitimate debate
+about the role of oscillations, but on balance there is emerging
+consensus that cortical oscillations play a critical role in shaping the
+temporal structure of perceptual experience. One area of research in
+which new theories and approaches are being explored concerns their
+potential causal role for hearing speech, and language processing.
+From selecting information in auditory streams to recognizing the
+elements of speech to constructing abstract linguistic representations,
+oscillations across timescales (from low-frequency delta to activity in
+the high-gamma band) have been implicated in functionally specific
+ways. The symposium addresses major new phenomena and their
+potential explanations by drawing on psychophysics and
+neurophysiology (MEG, ECoG, EEG). Linking hypotheses are
+developed between basic computational properties underlying
+hearing, speech, and language and how rhythmic brain activity might
+form the implementational basis underlying these operations.
+TALK 1: OSCILLATORY DYNAMICS OF AUDITORY ATTENTION
+Saskia Haegens1; 1Columbia University
+In daily life our brains receive a continuous stream of sensory input.
+Effective processing in a complex natural environment requires
+attention: selection of relevant input and suppression of irrelevant
+information. Here I will talk about the oscillatory dynamics thought to
+be instrumental in directing attention, specifically, (1) the alpha rhythm,
+and (2) neuronal entrainment to slow frequency rhythms. The alpha
+rhythm has been proposed as a mechanism of functional inhibition. In
+a series of spatial attention studies we showed that decreased alpha
+facilitates processing whereas increased alpha functions to suppress
+C ognit iv e N eurosc ienc e Society
+
+21
+
+I nv ited Sym posium
+
+distracting input. I will here discuss the evidence for this mechanism in
+the auditory system. In addition, I will present a series of
+psychophysics experiments on auditory temporal attention, showing
+rhythmic entrainment as a mechanism of focusing attention on relevant
+input. Subjects performed an auditory discrimination task, in which
+they received a temporal visual cue, which was either informative
+(rhythmic condition) or not informative about the specific timing of the
+target (random condition). We showed that when a target is presented
+in-phase with the cued rhythm, performance improves as compared to
+both the random-mode (no precise temporal information) and the outof-phase (unexpected) condition. In an accompanying MEG study we
+looked into the neural correlate of this effect, and found increased delta
+coherence, in the rhythmic condition, which was sustained after the
+cue, confirming the entrainment prediction.
+TALK 2: TIMING SPEECH CONTENT
+Virginie van Wassenhove1; 1CEA/NeuroSpin, France
+Neuronal oscillations have been implicated in various cognitive
+functions including time and speech processing. Non-stationarities in
+the phase and in the power of entrained brain responses are not only
+critical to index the endogenous control of information processing but
+also to capture an individual’s subjective perception of time or speech
+content. For instance, using a temporal recalibration paradigm in which
+participants adapted to audiovisual asynchronies while being recorded
+with magnetoencephalography (MEG) revealed that changes in the
+phase of the auditory entrained responses could predict an individual’s
+conscious event timing. In the speech domain, neuronal oscillations
+have been hypothesized to segment the acoustic stream into
+computational units (e.g. syllables or words). To test whether parsing
+was driven by bottom-up acoustic cues or modulated by top-down
+representational availability, participants listened to speech streams
+that would yield two possible percepts. Two markers of neural-speech
+tracking were found under endogenous control: small modulations in
+low-frequency oscillations and variable latencies of high-frequency
+neural activity (sp. beta and gamma bands). While changes in lowfrequency neural oscillations were compatible with the encoding of
+pre-lexical segmentation cues, high-frequency activity informed on an
+individual’s conscious speech percept. Altogether, these results are
+consistent with the notion of neural oscillations as cortical framing of
+information processing in time.
+TALK 3: CORTICAL TRACKING OF HIERARCHICAL LINGUISTIC
+STRUCTURES IN CONNECTED SPEECH
+Nai Ding1; 1Zhejiang University, China
+Language is hierarchically organized into syllables, words, phrases,
+and sentences. For spoken language, online building of these
+hierarchical linguistic structures is a fundamental yet challenging task.
+Although the boundaries between syllables generally have clear
+acoustic signatures, determining the boundaries between words and
+
+22
+
+C ognitiv e N eurosc ience Society
+
+2017 Annual M eet ing
+
+phrases critically relies on the listener's linguistic knowledge. During
+speech listening, it has been well characterized that auditory cortical
+activity is entrained to the syllabic rhythm of speech. However, how
+larger linguistic structures, such as words and phrases, are
+represented in the brain remains elusive and is investigated in this
+study. We designed speech materials in which the hierarchical
+linguistic structure of speech is dissociated from low level acoustic
+features,
+and
+measured
+cortical
+activity
+using
+magnetoencephalography (MEG) from listeners listening to such
+materials. It is demonstrated that cortical activity is concurrently
+entrained to the rhythms of syllables, phrases, and sentences,
+unconfounded by the tracking of acoustic properties of speech.
+Furthermore, entrainment to larger linguistic structures such as
+phrases and sentences is demonstrated to be associated with the
+syntactic structure of speech rather than the predictability of each
+incoming word. In summary, cortical circuits can generate slow
+rhythms matching the time scales of larger linguistic structures, even
+when such rhythms are not present in the speech input, which provides
+a plausible mechanism for online building of large linguistic structures.
+TALK 4: CORTICAL RHYTHMS IN HEARING, SPEECH, AND
+LANGUAGE: A TAXONOMY
+David Poeppel1,2; 1Max-Planck-Institute, 2NYU
+Oscillations have been observed in a wide range of phenomena in
+cognition, in general, and language processing, in particular. The
+rumors about oscillations range from ‘they are causally crucial’ to ‘they
+are at most the exhaust fumes of cortical computation.’ Can the
+wilderness of oscillation-based phenomena be tamed? On the view
+that brain rhythms are not merely epiphenomenal but play some role,
+an attempt at a taxonomic model is made. I argue that oscillations
+across rates can be argued to sample, predict, and attend to the world.
+Most broadly speaking, the pairing of theta and gamma underlies
+sampling, the pairing of delta and beta underlies predicting, and alpha
+splits the low and high rhythm regimes and underlies attending and
+inhibiting the inputs that confront our perceptual and cognitive
+systems.
+Q&A PERIOD
+The speakers will take questions from the audience.
+
+Invited Symposium Session 3
+THE LAPSING BRAIN: HOW ATTENTIONAL
+FLUCTUATIONS IMPACT COGNITION
+Tuesday, March 28, 1:30 - 3:30 pm, Ballroom A
+Chair: Edward Vogel, University of Chicago
+Speakers: Kirsten C. S. Adam, Mariam Aly, Michael Esterman,
+Kalina Christoff
+Attention is well known to play a pivotal role in controlling the operation
+of many cognitive mechanisms such as perception, memory,
+
+2017 Annual Meeting
+
+Invited Symposium
+
