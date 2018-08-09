@@ -8199,7 +8199,7 @@ A171
 TASK DEPENDENT NUMERICAL REPRESENTATIONS IN NUMBER
 SYMBOLS DRIVE INDIVIDUAL DIFFERENCES IN MATH Andrew Mattarella-Micke1, Bruce McCandliss1; 1Stanford University — Fluency with numer-
 
-ical symbols is essential for mathematical development in children. However, while previous research has proposed that the phonological (Evans
+ical symbols is essential for mathematical development in children. However, while previous research has proposed that the phonological (Evans 
 et al., 2014) or magnitude (Holloway & Ansari, 2009) bases of numerical
 symbols are critical for math, few have investigated the underlying representation directly. Further, confounds with reaction time and difficulty
 implicate executive function and response selection as an alternative explanation for the functional neuroanatomy (Gobel et al., 2004) and individual
