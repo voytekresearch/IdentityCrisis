@@ -18,14 +18,20 @@ def doc_to_stcs(df_doc):
             doc_stcs = doc_stcs + nltk.sent_tokenize(row['Abstract'])
 
     puncs = set(string.punctuation) - {'-', '\''} # don't discard dashes or '
-    doc_stcs = [''.join(ch for ch in s if ch not in puncs).lower().split() for s in doc_stcs if s is not '']
+    doc_stcs = [''.join(ch for ch in s if ch not in puncs).lower().split() for s in doc_stcs if (s is not '' and s is not np.nan)]
     return doc_stcs
 
-def concat_terms(doc_stcs, terms, merge_char='-'):
+def concat_terms(doc_stcs, terms, merge_char='-', convert_docs=True):
     """
     Takes a sentence list (prepped for word2vec) and find multi-word phrases from
     a dictionary (terms) and merge them into single terms
     """
+
+    # just want the concatenated terms, don't do conversion
+    if not convert_docs:
+        return [merge_char.join(t.split()) for t in terms]
+
+    # concatenate all terms in sentences
     doc_stcs_out = [s for s in doc_stcs]
     terms_out = [t for t in terms]
 
