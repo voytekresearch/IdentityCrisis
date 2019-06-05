@@ -20,8 +20,9 @@ def doc_to_stcs(df_doc):
         if type(row['Abstract']) is str:
             doc_stcs = doc_stcs + nltk.sent_tokenize(row['Abstract'])
 
+    #return doc_stcs
     puncs = set(string.punctuation) - {'-', '\''} # don't discard dashes or '
-    doc_stcs = [''.join(ch for ch in s if ch not in puncs).lower().split() for s in doc_stcs if (s is not '' and s is not np.nan)]
+    doc_stcs = [''.join(ch for ch in s if ch not in puncs).lower().split() for s in doc_stcs if (s is not '' and type(s)!=type(np.nan))]
     return doc_stcs
 
 def concat_terms(doc_stcs, terms, merge_char='-', convert_docs=True):
