@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd
 import gensim as gs
 from sklearn import metrics
+from matplotlib import colors
+import matplotlib.pyplot as plt
+
 
 
 def doc_to_stcs(df_doc):
@@ -88,7 +91,7 @@ def return_subset_inds(terms_all, terms_subset, pad_missing=False):
         subset_inds = [terms_all.index(t) for t in terms_subset if t in terms_all]
     return subset_inds
 
-def most_similar_subset(terms_all, terms_subset, vecs, positive, negative=[], topn=10):
+def most_similar_subset(terms_all, terms_subset, vecs, positive, negative=[], topn=10, dissim=False):
     """
     Performs similarity query, given positive and negative terms, on
     a subset of all the terms in the corpus.
@@ -110,7 +113,77 @@ def most_similar_subset(terms_all, terms_subset, vecs, positive, negative=[], to
     # get indices of terms_subset in terms_all
     subset_inds = return_subset_inds(terms_all, terms_subset)
     sim_inds, similarity = sort_similarity(compute_similarity(query_vec,vecs[subset_inds]))
-    return [(terms_all[subset_inds[w_ind]], similarity[i]) for i, w_ind in enumerate(sim_inds[:topn])]
+    if dissim:
+        # return most dissimilary words instead
+        return [(terms_all[subset_inds[w_ind]], similarity[-(i+1)]) for i, w_ind in enumerate(sim_inds[:-topn:-1])]
+    else:
+        return [(terms_all[subset_inds[w_ind]], similarity[i]) for i, w_ind in enumerate(sim_inds[:topn])]
+
+def query_similarity(models, corp_labels, positive, negative, topn, terms_subset=None, dissim=False):
+    """
+    Returns all similarity queries from a list of models.
+    """
+    print('Positive terms: %s \nNegative terms: %s'%(', '.join(positive), ', '.join(negative)))
+    df_list = []
+    for m_i, m in enumerate(models):
+        if terms_subset == None:
+            pairs = m.wv.most_similar(positive, negative, top_n)
+        else:
+            if type(m.wv.vectors_norm) == type(None):
+                # initialize similarity if it has not happened
+                m.init_sims()
+            pairs = most_similar_subset(m.wv.index2word,terms_subset,m.wv.vectors_norm,positive,negative,topn, dissim)
+        df_list.append(pd.DataFrame(pairs, columns=['Term', 'Similarity']))
+        df_similarity = pd.concat(df_list, axis=1)
+
+    columns = pd.MultiIndex.from_product([corp_labels, ['Term', 'Similarity']], names=['Corpora', 'Top Terms'])
+    df_similarity.columns=columns
+
+    return df_similarity
+
+def background_gradient(s, m, M, cmap='PuBu', low=0, high=0):
+    rng = M - m
+    norm = colors.Normalize(m - (rng * low),
+                            M + (rng * high))
+    normed = norm(s.values)
+    c = [colors.rgb2hex(x) for x in plt.cm.get_cmap(cmap)(normed)]
+    return ['background-color: %s' % color for color in c]
+
+def print_fancy_similarity(df_similarity, cmap='PuBu'):
+    M = df_similarity.select_dtypes(include=[np.number]).values.max()
+    m = df_similarity.select_dtypes(include=[np.number]).values.min()
+    return df_similarity.style.apply(background_gradient,cmap=cmap,m=m,M=M,low=0, high=1,
+                                     subset=df_similarity.columns.get_level_values(1).isin({"Similarity"}))
+
+def remove_spines(axis, bounds=['right', 'top']):
+    for b in bounds:
+        axis.spines[b].set_visible(False)
+
+
+def return_subset_counts(counts, subset_inds):
+    sorted_subset_inds = np.array(subset_inds)[np.argsort(counts[subset_inds])][::-1]
+    return sorted_subset_inds, counts[sorted_subset_inds]
+
+def get_top_terms(model, subset_terms=None, thresh=None, topn=50):
+    counts = np.array([model.wv.vocab[t].count for t in model.wv.index2word])
+    if subset_terms != None:
+        # if subset of terms is provided, sort based on only those
+        subset_inds = return_subset_inds(model.wv.index2word, subset_terms)
+        sorted_subset_inds, sorted_subset_counts = return_subset_counts(counts, subset_inds)
+    else:
+        # sort based on all words, gensim already sorts the vocab based on count
+        sorted_subset_counts = np.array([model.wv.vocab[t].count for t in model.wv.index2word])
+        sorted_subset_inds = np.arange(len(sorted_subset_counts)).astype(int)
+
+
+    if thresh is not None:
+        # if a threshold value is provided for counts/freq, then compute new cutoff number
+        topn=sum(sorted_subset_counts>=thresh)
+
+    top_inds, top_counts = sorted_subset_inds[:topn], sorted_subset_counts[:topn]
+    top_terms = [model.wv.index2word[i] for i in top_inds]
+    return top_inds, top_counts, top_terms
+
 
 
 #
