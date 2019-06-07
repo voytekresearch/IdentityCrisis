@@ -20,7 +20,7 @@ def doc_to_stcs(df_doc):
         if type(row['Abstract']) is str:
             doc_stcs = doc_stcs + nltk.sent_tokenize(row['Abstract'])
 
-    #return doc_stcs
+    #       return doc_stcs
     puncs = set(string.punctuation) - {'-', '\''} # don't discard dashes or '
     doc_stcs = [''.join(ch for ch in s if ch not in puncs).lower().split() for s in doc_stcs if (s is not '' and type(s)!=type(np.nan))]
     return doc_stcs
@@ -116,7 +116,7 @@ def most_similar_subset(terms_all, terms_subset, vecs, positive, negative=[], to
     sim_inds, similarity = sort_similarity(compute_similarity(query_vec,vecs[subset_inds]))
     if dissim:
         # return most dissimilary words instead
-        return [(terms_all[subset_inds[w_ind]], similarity[-(i+1)]) for i, w_ind in enumerate(sim_inds[:-topn:-1])]
+        return [(terms_all[subset_inds[w_ind]], similarity[-(i+1)]) for i, w_ind in enumerate(sim_inds[:-(topn+1):-1])]
     else:
         return [(terms_all[subset_inds[w_ind]], similarity[i]) for i, w_ind in enumerate(sim_inds[:topn])]
 
