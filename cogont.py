@@ -83,8 +83,22 @@ def sort_similarity(similarity):
     return sorted_inds, similarity[sorted_inds]
 
 def return_subset_inds(terms_all, terms_subset, pad_missing=False):
-    """
-    Returns the indices of the subset of terms from the full corpus terms.
+    """Returns the indices of the subset of terms from the full corpus terms.
+
+    Parameters
+    ----------
+    terms_all : list of strings
+        All terms in the dictionary.
+    terms_subset : list of strings
+        Subset of terms to be queried from the whole dictionary.
+    pad_missing : bool
+        True if return a NaN if the word is not found.
+
+    Returns
+    -------
+    type
+        List of indices that index the queried terms in the full dictionary.
+
     """
     if pad_missing:
         subset_inds = [terms_all.index(t) if t in terms_all else np.nan for t in terms_subset]
@@ -162,10 +176,34 @@ def remove_spines(axis, bounds=['right', 'top']):
 
 
 def return_subset_counts(counts, subset_inds):
+    """
+    Return the frequency of word occurrences.
+    Kinda weird that you have to pre-compute the counts AND it sorts it.
+    """
     sorted_subset_inds = np.array(subset_inds)[np.argsort(counts[subset_inds])][::-1]
     return sorted_subset_inds, counts[sorted_subset_inds]
 
 def get_top_terms(model, subset_terms=None, thresh=None, topn=50):
+    """ Takes gensim wv model and return the indices of the topn terms in the dictionary.
+    Can specify a subset of the terms to look at, with an optional threshold count.
+
+    Parameters
+    ----------
+    model : gs model object
+        gensim word2vec model.
+    subset_terms : list of strings
+        Subset of terms to return from dictionary.
+    thresh : int
+        Count cutoff for terms to include.
+    topn : int
+        How many terms to include, N most frequently occuring terms.
+
+    Returns
+    -------
+    top_inds, top_counts, top_terms
+        Lists of indices, counts, and terms of the top N occurring terms.
+
+    """
     counts = np.array([model.wv.vocab[t].count for t in model.wv.index2word])
     if subset_terms != None:
         # if subset of terms is provided, sort based on only those
