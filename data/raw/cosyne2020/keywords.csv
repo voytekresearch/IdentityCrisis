@@ -1,0 +1,109 @@
+,category,term,count
+0,behavior,fear/threat,3
+1,behavior,foraging,6
+2,behavior,go no/go,4
+3,behavior,motor task,23
+4,behavior,navigation,26
+5,behavior,other,4
+6,behavior,running,4
+7,behavior,social,8
+8,behavior,two alternative choice,9
+9,circuit,amygdala,1
+10,circuit,basal ganglia,3
+11,circuit,brainstem,3
+12,circuit,cerebellum,3
+13,circuit,disinhibition,3
+14,circuit,feedforward/recurrent,19
+15,circuit,hippocampus,25
+16,circuit,inhibitory interneurons,21
+17,circuit,midbrain,4
+18,circuit,purkinje neuron,1
+19,circuit,pyramidal neuron,6
+20,circuit,spinal cord,1
+21,cognition,attention,8
+22,cognition,categorization,5
+23,cognition,choice probability,2
+24,cognition,decision making,62
+25,cognition,memory,23
+26,cognition,object/scene recognition,13
+27,cognition,other,3
+28,cognition,reward,11
+29,cognition,working memory,9
+30,computational/modeling,deep networks,46
+31,computational/modeling,generative models,13
+32,computational/modeling,linear models,13
+33,computational/modeling,mean field methods,23
+34,computational/modeling,neural response modeling,30
+35,computational/modeling,normative modeling,23
+36,computational/modeling,other,2
+37,computational/modeling,probabilistic/bayesian,35
+38,computational/modeling,recurrent neural networks,82
+39,computational/modeling,representational learning,16
+40,computational/modeling,sparse coding,7
+41,computational/modeling,spiking models,43
+42,computational/modeling,timing,16
+43,computational/modeling,unsupervised learning,32
+44,cortex,auditory,6
+45,cortex,barrel,2
+46,cortex,entorhinal,6
+47,cortex,fef,2
+48,cortex,lip,4
+49,cortex,motor,12
+50,cortex,orbitofrontal,7
+51,cortex,parietal,3
+52,cortex,piriform,8
+53,cortex,prefrontal,14
+54,cortex,retrosplenial,2
+55,cortex,somatosensory,4
+56,cortex,visual,43
+57,disease,brain damage,1
+58,disease,neurodegeneration,1
+59,disease,other,1
+60,learning/plasticity,associative learning,14
+61,learning/plasticity,cellular/synaptic,12
+62,learning/plasticity,cerebellum,1
+63,learning/plasticity,error correction,4
+64,learning/plasticity,hippocampus,5
+65,learning/plasticity,other,8
+66,learning/plasticity,perceptual learning,8
+67,learning/plasticity,reinforcement learning,23
+68,learning/plasticity,rule learning,10
+69,learning/plasticity,striatum/basal ganglia,6
+70,motor systems,cerebellum,1
+71,motor systems,cortex,13
+72,motor systems,oculomotor,5
+73,motor systems,other,1
+74,motor systems,sensorimotor integration,14
+75,motor systems,skeletal motor,1
+76,motor systems,striatum/basal ganglia,2
+77,neural coding/decoding,correlations,28
+78,neural coding/decoding,dimensionality reduction,30
+79,neural coding/decoding,information theory,10
+80,neural coding/decoding,oscillations,12
+81,neural coding/decoding,other,8
+82,neural coding/decoding,population coding,65
+83,other representations,birdsong,7
+84,other representations,grid cells,10
+85,other representations,place cells/fields,12
+86,sensory systems,adaptation,3
+87,sensory systems,auditory,6
+88,sensory systems,cortex,10
+89,sensory systems,multisensory,8
+90,sensory systems,natural stimulus statistics,10
+91,sensory systems,perception,17
+92,sensory systems,retina,5
+93,sensory systems,somatosensation,1
+94,sensory systems,thalamus,7
+95,sensory systems,vision,33
+96,techniques,artificial stimulation,4
+97,techniques,biophysics,6
+98,techniques,eegs/field potentials,9
+99,techniques,electrophysiology,36
+100,techniques,fmri,2
+101,techniques,imaging cellular,11
+102,techniques,imaging population,31
+103,techniques,multi electrode array,14
+104,techniques,neuroanatomy,5
+105,techniques,optogenetics,21
+106,techniques,other,1
+107,techniques,psychophysics,11

@@ -2,7 +2,7 @@
 import string, nltk
 import numpy as np
 import pandas as pd
-import gensim as gs
+#import gensim as gs
 from sklearn import metrics
 from matplotlib import colors
 import matplotlib.pyplot as plt
